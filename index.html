@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MacUpdate</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="https://use.fontawesome.com/9dfc5824a3.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <!--Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark white lighten-1">
+
+   <a class="navbar-brand" href="#"><img  src="img/svg/nav.svg"  alt="Menu"></a>
+   <a id="sidebarCollapse" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  class="btn btn-primary p-3 button-collapse dropdown-toggle"><i class="fas fa-bars"></i></a>
+     <ul class="navbar-nav ml-auto nav-flex-icons">
+       <li class="nav-item avatar">
+         <a class="nav-link p-0 zoom" href="#">
+           <img src="img/avatar.png" class="rounded-circle z-depth-0" alt="avatar image">
+           Barack Obama
+         </a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+ <!--/.Navbar -->
+</header>
+<main>
+  <div class="row">
+    <div class="wrapper ">
+    <!-- Sidebar -->
+    <nav id="pageSubmenu" class="collapse">
+      <div class="tablist ">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link zoom active" id="folder-tab" data-toggle="pill" href="#folder" role="tab"
+            aria-controls="folder" aria-selected="false"><img src="img/svg/folder.svg" alt="folder"></a>
+          <a class="nav-link zoom" id="chart-tab" data-toggle="pill" href="#chart" role="tab"
+            aria-controls="chart" aria-selected="false"><img src="img/svg/chart.svg" alt="chart"></a>
+          <a class="nav-link zoom" id="mail-tab" data-toggle="pill" href="#mail" role="tab"
+            aria-controls="mail" aria-selected="false"><img src="img/svg/mail.svg" alt="mail"></a>
+          <a class="nav-link zoom" id="files-tab" data-toggle="pill" href="#files" role="tab"
+            aria-controls="files" aria-selected="false"><img src="img/svg/files.svg" alt="files"></a>
+        </div>
+      </div>
+    </nav>
+
+</div>
+    <div class="container ">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="folder" role="tabpanel" aria-labelledby="folder-tab">
+          <div class="container">
+            <div class="data-table">
+              <div class="d-flex">
+                <div class="table-name">
+                  <p>Data Table</p>
+                  <h1>Table</h1>
+                </div>
+                <p class="sort">Sort by: From low to high</p>
+              </div>
+              <table id="macTable" class="table table-striped table-bordered table-sm" cellspacing="0" >
+                  <tr>
+                    <th> Name </th>
+                    <th> 2020/01/01 </th>
+                    <th> 2020/01/01 </th>
+                    <th> Status </th>
+                    <th> Total </th>
+                  </tr>
+                  <tr>
+                    <td>Person 1</td>
+                    <td>3h 15m</td>
+                    <td>6h 12m</td>
+                    <td><p class="status-paid"> Paid </p></td>
+                    <td>9h 27m</td>
+                  </tr>
+                  <tr>
+                    <td>Person 2</td>
+                    <td></td>
+                    <td>5h 48m</td>
+                    <td><p class="status-unpaid"> Unpaid </p></td>
+                    <td>5h 48m</td>
+                  </tr>
+                  <tr>
+                    <td>Person 3</td>
+                    <td>2h 10m</td>
+                    <td></td>
+                    <td><p class="status-pending"> Pending </p></td>
+                    <td>2h 10m</td>
+                  </tr>
+              </table>
+            </div>
+            <div id="tips" class="tips transparent">
+              <div class="some-tip d-flex">
+                <div class="mark"><img src="img/svg/mark.svg" alt="mark"></div>
+                <div class="text">
+                  <h2>This is some tip</h2>
+                  <p>This is some tip</p>
+                </div>
+              </div>
+              <button id="hide" type="button" class="btn hide-tips">Ok</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="chart" role="tabpanel" aria-labelledby="chart-tab">...</div>
+        <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail-tab">...</div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab">...</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

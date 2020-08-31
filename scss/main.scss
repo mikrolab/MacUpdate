@@ -1,0 +1,272 @@
+body {
+	background-color: #F7F7FA;
+	font-family: DM Sans;
+	font-style: normal;
+	font-weight: normal;
+}
+main {
+	height: calc(100vh - 81px);
+}
+.row {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.navbar {
+	box-shadow: none;
+	padding: 0;
+}
+#sidebarCollapse {
+	display: none;
+}
+.navbar-brand {
+	background-color: #007AFF;
+	padding: 22px 25px;
+	margin-right: 0;
+}
+.avatar {
+	img {
+		height: 37px;
+		margin-right: 13px;
+	}
+}
+.navbar.navbar-dark {
+	.navbar-nav {
+		.nav-item {
+			.nav-link {
+				color: #232326;
+				font-size: 14px;
+				line-height: 18px;
+				margin-right: 31px;
+				&:hover {
+					color: #232326;
+				}
+			}
+		}
+	}
+}
+.tablist {
+	width: 80px;
+	background-color: #373B53;
+	padding-top: 60px;
+	height: 100%;
+}
+.nav-pills {
+	.nav-link {
+		width: 54px;
+		height: 54px;
+		display: flex;
+		margin: 13px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		img {
+			height: 24px;
+			width: 24px;
+			margin: auto;
+		}
+	}
+	.nav-link.active {
+		background-color: #fff;
+	}
+	.show {
+		>.nav-link {
+			background-color: #fff;
+		}
+	}
+}
+.content {
+	max-width: 95.8%;
+}
+.data-table {
+	margin-top: 48px;
+	padding: 24px 32px 17px;
+	background-color: #fff;
+	border-radius: 10px;
+	p {
+		font-size: 13px;
+	}
+	h1 {
+		font-size: 27px;
+		font-weight: bold;
+	}
+	.d-flex {
+		justify-content: space-between;
+	}
+}
+.sort {
+	padding-top: 30px;
+}
+th {
+	cursor: pointer;
+}
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: inherit;
+			}
+			&:first-child {
+				background-color: #F7F7FA;
+			}
+		}
+	}
+}
+.tips {
+	height: 80px;
+	margin-top: 17px;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+.mark {
+	background-color: #E3F0FF;
+	width: 45px;
+	height: 45px;
+	margin: 17px 17px;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+}
+.some-tip {
+	.text {
+		padding: 15px;
+		h2 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p {
+			font-size: 13px;
+		}
+	}
+}
+.btn {
+	border-radius: 5px;
+	width: 60px;
+	height: 40px;
+	font-size: 15px;
+	padding: 0;
+	margin: 20px 32px;
+	background-color: rgba(0, 122, 255, 0.11);
+	color: #007AFF;
+	text-transform: none;
+	font-weight: bold;
+}
+.status-paid {
+	border-radius: 5px;
+	width: 58px;
+	height: 27px;
+	font-size: 15px;
+	padding: 0;
+	background-color: rgba(0, 122, 255, 0.11);
+	color: #007AFF;
+	padding: 2px;
+	text-align: center;
+	margin: 0;
+}
+.status-unpaid {
+	border-radius: 5px;
+	width: 58px;
+	height: 27px;
+	font-size: 15px;
+	padding: 0;
+	background-color: rgba(255, 45, 85, 0.11);
+	color: #FF4E3D;
+	padding: 2px;
+	text-align: center;
+	margin: 0;
+}
+.status-pending {
+	border-radius: 5px;
+	width: 58px;
+	height: 27px;
+	font-size: 15px;
+	padding: 0;
+	background-color: rgba(255, 149, 0, 0.11);
+	color: #FF9500;
+	padding: 2px;
+	text-align: center;
+	margin: 0;
+}
+.tab-content {
+	.transparent {
+		opacity: 0;
+	}
+}
+.zoom {
+	&:hover {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+}
+.wrapper {
+	display: flex;
+	align-items: stretch;
+	display: flex;
+	align-items: stretch;
+}
+.dropdown-toggle {
+	&::after {
+		content: none;
+	}
+}
+@media (max-width: 868px) {
+	#sidebar {
+		margin-left: -100vw;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
+	#sidebarCollapse {
+		display: inline-block;
+		background-color: #007AFF;
+		padding: 15px 20px;
+		color: #fff;
+		margin: 0;
+		width: 54px;
+		height: 54px;
+		border-radius: 0;
+	}
+	.navbar-brand {
+		display: none;
+	}
+	.nav-pills {
+		.nav-link {
+			margin: 0;
+			padding: 10px;
+			width: 45px;
+			height: 45px;
+			margin: 5px;
+		}
+	}
+	.tips {
+		height: auto;
+	}
+	.data-table {
+		padding: 17px 10px;
+	}
+	.container {
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+	.wrapper {
+		position: absolute;
+	}
+	.nav {
+		flex-direction: row !important;
+		flex-flow: row;
+		justify-content: center;
+	}
+	.tablist {
+		padding: 2px 0;
+		width: 100vw;
+	}
+	.tab-content {
+		padding-top: 15px;
+	}
+}
